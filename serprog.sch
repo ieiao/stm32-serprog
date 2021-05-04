@@ -19,7 +19,7 @@ U 1 1 608CF690
 P 3050 1250
 F 0 "J1" H 3107 1717 50  0000 C CNN
 F 1 "USB_B_Micro" H 3107 1626 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 3200 1200 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3200 1200 50  0001 C CNN
 F 3 "~" H 3200 1200 50  0001 C CNN
 	1    3050 1250
 	1    0    0    -1  
@@ -620,17 +620,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 5600 5650 5600
 $Comp
-L Connector_Generic:Conn_01x04 J2
-U 1 1 60B0554E
-P 5450 5500
-F 0 "J2" H 5530 5492 50  0000 L CNN
-F 1 "Conn_01x04" H 5530 5401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 5450 5500 50  0001 C CNN
-F 3 "~" H 5450 5500 50  0001 C CNN
-	1    5450 5500
-	-1   0    0    1   
-$EndComp
-$Comp
 L Memory_EEPROM:AT25xxx U4
 U 1 1 60968DAB
 P 5700 4450
@@ -1109,58 +1098,6 @@ NoConn ~ 8900 4600
 NoConn ~ 8900 4700
 NoConn ~ 8900 4800
 $Comp
-L Connector:TestPoint TP1
-U 1 1 6104E09E
-P 4200 3550
-F 0 "TP1" V 4150 3700 50  0000 L CNN
-F 1 "TestPoint" V 4245 3738 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4400 3550 50  0001 C CNN
-F 3 "~" H 4400 3550 50  0001 C CNN
-	1    4200 3550
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP2
-U 1 1 61054E74
-P 4200 3650
-F 0 "TP2" V 4150 3800 50  0000 L CNN
-F 1 "TestPoint" V 4245 3838 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4400 3650 50  0001 C CNN
-F 3 "~" H 4400 3650 50  0001 C CNN
-	1    4200 3650
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP3
-U 1 1 610553C8
-P 4200 3750
-F 0 "TP3" V 4150 3900 50  0000 L CNN
-F 1 "TestPoint" V 4245 3938 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4400 3750 50  0001 C CNN
-F 3 "~" H 4400 3750 50  0001 C CNN
-	1    4200 3750
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP4
-U 1 1 6105576F
-P 4200 3850
-F 0 "TP4" V 4150 4000 50  0000 L CNN
-F 1 "TestPoint" V 4245 4038 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 4400 3850 50  0001 C CNN
-F 3 "~" H 4400 3850 50  0001 C CNN
-	1    4200 3850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3850 3550 4200 3550
-Wire Wire Line
-	3950 3650 4200 3650
-Wire Wire Line
-	4050 3750 4200 3750
-Wire Wire Line
-	4150 3850 4200 3850
-$Comp
 L Device:R R1
 U 1 1 6107DD48
 P 3250 6100
@@ -1292,4 +1229,48 @@ Wire Wire Line
 	4100 2750 4150 2750
 Text GLabel 4100 2750 0    50   Input ~ 0
 FLASH_VCC
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6092BE60
+P 5650 5300
+F 0 "TP1" V 5650 5550 50  0000 C CNN
+F 1 "TestPoint" V 5754 5372 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 5300 50  0001 C CNN
+F 3 "~" H 5850 5300 50  0001 C CNN
+	1    5650 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 609307F4
+P 5650 5400
+F 0 "TP2" V 5650 5650 50  0000 C CNN
+F 1 "TestPoint" V 5754 5472 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 5400 50  0001 C CNN
+F 3 "~" H 5850 5400 50  0001 C CNN
+	1    5650 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 60930D0E
+P 5650 5500
+F 0 "TP3" V 5650 5750 50  0000 C CNN
+F 1 "TestPoint" V 5754 5572 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 5500 50  0001 C CNN
+F 3 "~" H 5850 5500 50  0001 C CNN
+	1    5650 5500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 60931275
+P 5650 5600
+F 0 "TP4" V 5650 5850 50  0000 C CNN
+F 1 "TestPoint" V 5754 5672 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 5850 5600 50  0001 C CNN
+F 3 "~" H 5850 5600 50  0001 C CNN
+	1    5650 5600
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
